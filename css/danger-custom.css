@@ -1,0 +1,257 @@
+@import url('https://use.typekit.net/ckk8qld.css');
+
+body {
+    font-family: 'tt-nooks-script', sans-serif;
+}
+
+:root {
+    --main-bg: #F8F6F0;
+
+    --hero-text-color-1: #B00FE8;
+    --hero-text-color-2: #E80FB8;
+}
+
+.hero {
+    margin-top: 4rem;
+    overflow: hidden;
+    position: relative;
+}
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.hero_img {
+    width: 100%;
+    display: block;
+}
+
+#flower-1 {
+    margin-left: -50%;
+}
+
+#flower-2 {
+    margin: 0 auto;
+}
+
+#flower-3 {
+    margin-left: auto;
+    margin-right: -50%;
+}
+
+.hero-profile {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #flower-1,
+    #flower-3 {
+        display: none; /* Hide flower-1 and flower-3 */
+    }
+
+    #flower-2 {
+        width: 120%; /* Increase the size of flower-2 */
+        margin-left: -10%; /* Adjust margins if needed */
+        margin-right: -10%;
+    }
+}
+
+.profession {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profession .row {
+    display: flex;
+    align-items: center;
+}
+
+.profession .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profession .col:last-child {
+    justify-content: center;
+}
+
+.profession-icon {
+    width: 15rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.profession p {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+@media  (max-width: 768px) {
+    .profession p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+.interests {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interests .row {
+    display: flex;
+    align-items: center;
+}
+
+.interests .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.interests .col:last-child {
+    justify-content: center;
+}
+
+
+.interests p {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--hero-text-color-1);
+}
+
+.interests span {
+    color: var(--hero-text-color-2);
+}
+
+.wave-bg {
+    width: 30rem;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.pointing {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+#music .row {
+    position: relative;
+}
+
+.wave-bg-2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 35rem; /* Adjust this according to your needs */
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.smiling {
+    position: relative;
+    z-index: 1;
+    width: 25rem; /* Adjust this according to your needs */
+    max-width: 100%;
+    height: auto;
+    left: 15%;
+}
+
+.tickles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tickles .row {
+    position: relative; /* Add position relative to the row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickles p {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--hero-text-color-1);
+}
+
+.tickles span {
+    color: var(--hero-text-color-2);
+}
+
+.wave-bg-3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 30rem; !important;
+    height: auto;
+    z-index: 0;
+}
+
+.beard {
+    position: relative;
+    width: 70rem;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.tag-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-line .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tag-line #third {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the end */
+}
+
+
+.tag-line h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    color: var(--hero-text-color-1);
+}
+
+.tag-line h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--hero-text-color-2);
+}
